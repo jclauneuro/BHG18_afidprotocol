@@ -97,10 +97,22 @@ ddply(df_raters, "rater", summarize, mean=mean(rater_error), sd=sd(rater_error))
 
 ########### INDIVIDUAL RATER EXAMPLE ###############
 # e.g. rater 4
-df_curr_rater <- subset(df_raters, rater==4)[,c("fid","name","description","rater_error","outlier")]
+df_curr_rater <- subset(df_raters, rater==i)[,c("fid","name","description","rater_error","outlier")]
 df_curr_rater$description <- df_gold$description
 mean(df_curr_rater$rater_error)
 sd(df_curr_rater$rater_error)
 df_curr_rater
+
+########### OUTPUT RATERS ###############
+setwd('~/GitHub/BHG18_landmarkprotocol/output/')
+for (i in 1:length(csv_files)) {
+        df_curr_rater <- subset(df_raters, rater==i)[,c("fid","name","description","rater_error","outlier")]
+        df_curr_rater$description <- df_gold$description
+        mean(df_curr_rater$rater_error)
+        sd(df_curr_rater$rater_error)
+        #df_curr_rater
+        fio <- file(csv_files[i], open="wt")
+        write.table(df_curr_rater,fio,sep=',',quote=FALSE,col.names=TRUE,row.names=FALSE)
+}
 
 
