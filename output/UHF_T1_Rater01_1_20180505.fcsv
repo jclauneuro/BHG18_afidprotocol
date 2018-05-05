@@ -1,3 +1,4 @@
+fid,name,description,rater_error,outlier
 1,1,AC,0.710745013262245,FALSE
 2,2,PC,0.30635166872432,FALSE
 3,3,infracollicular sulcus,0.954745037685382,FALSE
@@ -30,4 +31,3 @@
 30,30,L ventral occipital horn,2.28216930246181,FALSE
 31,31,R olfactory sulcal fundus,2.20616452274182,FALSE
 32,32,L olfactory sulcal fundus,1.13030020157589,FALSE
-ory sulcal fundus,1.13030020157589,FALSE
