@@ -1,4 +1,4 @@
-# BHG18: Landmark Placement Protocol Tutorial
+# BHG18 BrainHackWestern: Results from Neuroanatomy and 3D Slicer Tutorial
 
 * Overall: `1.624238 +/- 2.403152 mm`
 ```
