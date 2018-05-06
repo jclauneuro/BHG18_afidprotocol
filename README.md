@@ -1,5 +1,6 @@
-# BHG18 BrainHackWestern: Results from Neuroanatomy and 3D Slicer Tutorial
+# Neuroanatomy and 3D Slicer Tutorial
 
+* #BHG18 #BrainHackWestern
 * Overall: `1.624238 +/- 2.403152 mm`
 ```
    rater     mean        sd
